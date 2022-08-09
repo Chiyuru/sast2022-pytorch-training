@@ -1,0 +1,8 @@
+ipython
+pillow
+numpy
+torch==1.12.0
+requests
+tqdm
+matplotlib
+
