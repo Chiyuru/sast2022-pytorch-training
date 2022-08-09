@@ -74,7 +74,6 @@ def process_data(mode: str, threshold: float):
     f.write(out_str)
 
 
-
 if __name__ == "__main__":
     parser = ArgumentParser()
     parser.add_argument("--threshold", type=float, default=0.2, help="Threshold for determining if a label exists in "
