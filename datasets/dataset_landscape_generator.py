@@ -30,7 +30,6 @@ def calc_label(label: np.ndarray, threshold: float):
     return {"mountain": mountain, "sky": sky, "water": water}
    
 
-
 def process_data(mode: str, threshold: float):
     """
     Pre-process data.
