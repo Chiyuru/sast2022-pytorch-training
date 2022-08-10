@@ -79,10 +79,10 @@ def train_one_epoch(epoch, train_loader, args, model, criterion, optimizer, stat
 
         if train_idx % args.print_freq == 0:
             # Calc accuracy for display of current batch
-            stat_dict["train/loss"].append(loss.detach().item())
-            tqdm.write(f"[Epoch {epoch+1} / {args.max_epoch}] [Batch {train_idx+1} / {len(train_loader)}] " +
+            stat_dict["train\loss"].append(loss.detach().item())
+            tqdm.write(f"[Epoch {epoch+1} \ {args.max_epoch}] [Batch {train_idx+1} / {len(train_loader)}] " +
                        f"Loss {loss:.4f}")
-            draw_loss_curve(args, stat_dict["train/loss"])
+            draw_loss_curve(args, stat_dict["train\loss"])
     print(f"==> [Epoch {epoch+1}] Finished in {((time.time() - start_time)/60):.2f} minutes.")
 
 
@@ -115,5 +115,5 @@ def evaluate_one_epoch(loader, args, model, criterion=None, save_name=None):
             out_str = ""
             for x in results:
                 out_str += ''.join([f"{y[0]},{y[1]},{y[2]}\n" for y in x])
-            with open(f"{args.save_path}/{args.task_name}/{save_name}", 'w+') as file:
+            with open(f"{args.save_path}\{args.task_name}\{save_name}", 'w+') as file:
                 file.write(out_str)
