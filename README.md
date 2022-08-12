@@ -1,8 +1,10 @@
 # Final Scores
 
-Score 100 Average 0.83 Mountain 0.77 Sky 0.94 Water 0.79
+Score 100 Average 0.81 Mountain 0.74 Sky 0.91 Water 0.77, Submitted by Chiyuru, 08/12 23:05.
 
-Submitted by Chiyuru, 08/09 16:12.
+All checkpoints (检查站) : https://cloud.tsinghua.edu.cn/d/8a5818b6925742478eb0/
+
+ckpt_epoch_9 的准确度稍高一些，大约82%. A 卡跑得太慢了，一测就是一天，暂时只能做到这样了:( 。
 
 # 数据分析 & PyTorch 图像多分类作业
 
