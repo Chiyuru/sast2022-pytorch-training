@@ -23,7 +23,7 @@ def calc_label(label: np.ndarray, threshold: float):
         "water": [2, 3, 8, 16, 20],
     }
     
-    mountain = np.sum(np.isin(label,label2id)) > int(threshold * label.size)
+    mountain = np.sum(np.isin(label,label2id["mountain"])) > int(threshold * label.size)
     sky = np.sum(np.isin(label,label2id["sky"])) > int(threshold * label.size)
     water = np.sum(np.isin(label,label2id["water"])) > int(threshold * label.size)
    

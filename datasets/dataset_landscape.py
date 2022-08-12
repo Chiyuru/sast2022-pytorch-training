@@ -7,13 +7,13 @@ class LandScapeDataset(Dataset):
     def __init__(self, mode="train"):
         self.mode = mode
         if mode == "train" or mode == "val":
-            with open(f"C:\\Users\85480\Documents\Python\AI\data\{mode}\\file.txt", 'r') as file:
+            with open(f".\data\{mode}\\file.txt", 'r') as file:
                 entries = file.read().strip().split('\n')[1:]
                 table = [entry.split(",") for entry in entries]
                 self.images = [row[0] for row in table]
                 self.gt = [(eval(row[1]), eval(row[2]), eval(row[3])) for row in table]
         elif mode == "test":
-            with open(f"C:\\Users\85480\Documents\Python\AI\data\{mode}\\file.txt", 'r') as file:
+            with open(f".\data\{mode}\\file.txt", 'r') as file:
                 self.images = file.read().strip().split('\n')[1:]
 
     def __len__(self):
@@ -27,7 +27,7 @@ class LandScapeDataset(Dataset):
 
         file_name = self.images[idx]
 
-        image = Image.open(f"C:\\Users\85480\Documents\Python\AI\data\{self.mode}\imgs\{file_name}")
+        image = Image.open(f".\data\{self.mode}\imgs\{file_name}")
         image = image.resize((image.width // 4, image.height // 4))  # Resize to (w/4, h/4)
         array = np.array(image)
         array = array.transpose((2, 0, 1))  # From (192, 256, 3) to (3, 192, 256)

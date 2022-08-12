@@ -19,7 +19,10 @@ if __name__ == "__main__":
     # Training
     parser.add_argument("--num_epoch", type=int, default=0, help="Current epoch number.")
     parser.add_argument("--max_epoch", type=int, default=10, help="Max epoch number to run.")
+    
+    # Fill the default path below when testing
     parser.add_argument("--checkpoint_path", type=str, default="", help="Checkpoint path to load.")
+    
     parser.add_argument("--save_path", type=str, default="./save/", help="Checkpoint path to save.")
     parser.add_argument("--save_freq", type=int, default=1, help="Save model every how many epochs.")
     parser.add_argument("--val_freq", type=int, default=1, help="Save model every how many epochs.")
