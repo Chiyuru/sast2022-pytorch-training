@@ -2,7 +2,7 @@
 
 Score 100 Average 0.81 Mountain 0.74 Sky 0.91 Water 0.77, Submitted by Chiyuru, 08/12 23:05.
 
-All checkpoints (检查站) : https://cloud.tsinghua.edu.cn/d/8a5818b6925742478eb0/
+All checkpoints : https://cloud.tsinghua.edu.cn/d/8a5818b6925742478eb0/
 
 ckpt_epoch_9 的准确度稍高一些，大约82%. A 卡跑得太慢了，一测就是一天，暂时只能做到这样了:( 。
 
